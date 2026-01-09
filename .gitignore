@@ -1,3 +1,4 @@
+.metadata
 *.o
 *.a
 *.elf
@@ -7,6 +8,7 @@
 *.lst
 *.axf
 *.d
+
 
 
 
