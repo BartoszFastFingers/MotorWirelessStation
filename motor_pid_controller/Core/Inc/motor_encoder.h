@@ -1,0 +1,15 @@
+/*
+ * motor_encoder.h
+ *
+ *  Created on: Jan 9, 2026
+ *      Author: Bartosz
+ */
+
+#ifndef CORE_INC_MOTOR_ENCODER_H_
+#define CORE_INC_MOTOR_ENCODER_H_
+
+
+
+
+
+#endif /* CORE_INC_MOTOR_ENCODER_H_ */

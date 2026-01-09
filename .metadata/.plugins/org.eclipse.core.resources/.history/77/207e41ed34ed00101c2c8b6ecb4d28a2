@@ -1,0 +1,14 @@
+/*
+ * motor_controller.c
+ *
+ *  Created on: Jan 9, 2026
+ *      Author: Bartosz
+ */
+
+#include "motor_controller.h"
+
+void init_motor_controller(TIM_HandleTypeDef *htim, uint32_t Channel)
+{
+	HAL_TIM_PWM_Start(htim, Channel);
+}
+

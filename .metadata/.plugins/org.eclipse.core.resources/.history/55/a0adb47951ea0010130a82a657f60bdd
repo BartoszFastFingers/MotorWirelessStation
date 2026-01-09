@@ -1,0 +1,97 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  "ASM"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_ASM
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/Projects/Common/WPAN/Startup/stm32wbaxx_ResetHandler_GCC.s" "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/config_default/cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Startup/stm32wbaxx_ResetHandler_GCC.s.obj"
+  )
+set(CMAKE_ASM_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_ASM
+  "BLE_LL"
+  "DEBUG"
+  "PHY_40nm_3_00_a"
+  "STM32WBA52xx"
+  "USE_FULL_LL_DRIVER"
+  "USE_HAL_DRIVER"
+  )
+
+# The include file search paths:
+set(CMAKE_ASM_TARGET_INCLUDE_PATH
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../Core/Inc"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../System/Interfaces"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../System/Modules"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../System/Config/Log"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../System/Config/LowPower"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../System/Config/Debug_GPIO"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../STM32_WPAN/App"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../STM32_WPAN/Target"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../Utilities/trace/adv_trace"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../Drivers/STM32WBAxx_HAL_Driver/Inc"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../Drivers/STM32WBAxx_HAL_Driver/Inc/Legacy"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../Projects/Common/WPAN/Interfaces"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../Projects/Common/WPAN/Modules"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../Projects/Common/WPAN/Modules/BasicAES"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../Projects/Common/WPAN/Modules/MemoryManager"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../Projects/Common/WPAN/Modules/RTDebug"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../Projects/Common/WPAN/Modules/SerialCmdInterpreter"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../Projects/Common/WPAN/Modules/Log"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../Utilities/misc"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../Utilities/sequencer"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../Utilities/tim_serv"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../Utilities/lpm/tiny_lpm"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../Middlewares/ST/STM32_WPAN"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../Middlewares/ST/STM32_WPAN/link_layer/ll_cmd_lib/config/ble_full"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../Middlewares/ST/STM32_WPAN/ble/svc/Src"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32WBAxx/Include"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../Middlewares/ST/STM32_WPAN/link_layer/ll_cmd_lib/inc"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../Middlewares/ST/STM32_WPAN/link_layer/ll_cmd_lib/inc/_40nm_reg_files"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../Middlewares/ST/STM32_WPAN/link_layer/ll_cmd_lib/inc/ot_inc"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../Middlewares/ST/STM32_WPAN/link_layer/ll_sys/inc"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../Middlewares/ST/STM32_WPAN/ble/stack/include"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../Middlewares/ST/STM32_WPAN/ble/stack/include/auto"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../Middlewares/ST/STM32_WPAN/ble/svc/Inc"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/cmake/stm32cubemx/../../Drivers/CMSIS/Include"
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/Projects/Common/WPAN/Interfaces/adv_trace_usart_if.c" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Interfaces/adv_trace_usart_if.c.obj" "gcc" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Interfaces/adv_trace_usart_if.c.obj.d"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/Projects/Common/WPAN/Interfaces/hw_aes.c" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Interfaces/hw_aes.c.obj" "gcc" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Interfaces/hw_aes.c.obj.d"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/Projects/Common/WPAN/Interfaces/hw_otp.c" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Interfaces/hw_otp.c.obj" "gcc" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Interfaces/hw_otp.c.obj.d"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/Projects/Common/WPAN/Interfaces/hw_pka.c" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Interfaces/hw_pka.c.obj" "gcc" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Interfaces/hw_pka.c.obj.d"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/Projects/Common/WPAN/Interfaces/hw_pka_p256.c" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Interfaces/hw_pka_p256.c.obj" "gcc" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Interfaces/hw_pka_p256.c.obj.d"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/Projects/Common/WPAN/Interfaces/hw_rng.c" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Interfaces/hw_rng.c.obj" "gcc" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Interfaces/hw_rng.c.obj.d"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/Projects/Common/WPAN/Interfaces/timer_if.c" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Interfaces/timer_if.c.obj" "gcc" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Interfaces/timer_if.c.obj.d"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/Projects/Common/WPAN/Modules/BasicAES/baes_ccm.c" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/BasicAES/baes_ccm.c.obj" "gcc" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/BasicAES/baes_ccm.c.obj.d"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/Projects/Common/WPAN/Modules/BasicAES/baes_cmac.c" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/BasicAES/baes_cmac.c.obj" "gcc" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/BasicAES/baes_cmac.c.obj.d"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/Projects/Common/WPAN/Modules/BasicAES/baes_ecb.c" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/BasicAES/baes_ecb.c.obj" "gcc" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/BasicAES/baes_ecb.c.obj.d"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/Projects/Common/WPAN/Modules/Log/log_module.c" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/Log/log_module.c.obj" "gcc" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/Log/log_module.c.obj.d"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/Projects/Common/WPAN/Modules/MemoryManager/advanced_memory_manager.c" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/MemoryManager/advanced_memory_manager.c.obj" "gcc" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/MemoryManager/advanced_memory_manager.c.obj.d"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/Projects/Common/WPAN/Modules/MemoryManager/stm32_mm.c" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/MemoryManager/stm32_mm.c.obj" "gcc" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/MemoryManager/stm32_mm.c.obj.d"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/Projects/Common/WPAN/Modules/RTDebug/RTDebug.c" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/RTDebug/RTDebug.c.obj" "gcc" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/RTDebug/RTDebug.c.obj.d"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/Projects/Common/WPAN/Modules/RTDebug/RTDebug_dtb.c" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/RTDebug/RTDebug_dtb.c.obj" "gcc" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/RTDebug/RTDebug_dtb.c.obj.d"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/Projects/Common/WPAN/Modules/SerialCmdInterpreter/serial_cmd_interpreter.c" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/SerialCmdInterpreter/serial_cmd_interpreter.c.obj" "gcc" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/SerialCmdInterpreter/serial_cmd_interpreter.c.obj.d"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/Projects/Common/WPAN/Modules/app_sys.c" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/app_sys.c.obj" "gcc" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/app_sys.c.obj.d"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/Projects/Common/WPAN/Modules/otp.c" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/otp.c.obj" "gcc" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/otp.c.obj.d"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/Projects/Common/WPAN/Modules/scm.c" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/scm.c.obj" "gcc" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/scm.c.obj.d"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/Projects/Common/WPAN/Modules/stm_list.c" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/stm_list.c.obj" "gcc" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/stm_list.c.obj.d"
+  "/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/Projects/Common/WPAN/Modules/stm_queue.c" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/stm_queue.c.obj" "gcc" "cmake/stm32cubemx/CMakeFiles/Common.dir/__/__/Projects/Common/WPAN/Modules/stm_queue.c.obj.d"
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")
