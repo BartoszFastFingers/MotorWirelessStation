@@ -108,8 +108,17 @@ int main(void)
 
   motor_encoder_init(motor_encoder, &htim2, 44);
   motor_controller_set_direction(motor_ctrl, RIGHT);
-  motor_controller_set_value(motor_ctrl, CONTROLLER_MIN_ROT_VALUE + 1000);
 
+  for(int i = 2000; i < CONTROLLER_MAX_ROT_VALUE + 3000; i++)
+  {
+	  uint32_t Ts = 1000;
+	  motor_controller_set_value(motor_ctrl, (uint16_t)i); HAL_Delay(Ts);
+	  float rpm = motor_encoder_rpm_callback(motor_encoder, 1);
+	  char msg[32]; snprintf(msg, sizeof(msg), "%d:%.3f\r\n", i, rpm);
+	  HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+  }
+
+  motor_controller_set_value(motor_ctrl, CONTROLLER_MIN_ROT_VALUE + 1000);
 
 
 
