@@ -1,0 +1,30 @@
+/*
+ * motor_encoder.c
+ *
+ *  Created on: Jan 9, 2026
+ *      Author: Bartosz
+ */
+
+#include "motor_encoder.h"
+
+void motor_encoder_init(motor_encoder_t* encoder, TIM_HandleTypeDef* tim,
+		 uint8_t _cpr)
+{
+	encoder->encoder_timer = tim;
+	encoder->last_value = 0;
+	encoder->cpr = _cpr;
+	HAL_TIM_Encoder_Start(encoder->encoder_timer, TIM_CHANNEL_ALL);
+
+}
+
+
+float motor_encoder_rpm_callback(motor_encoder_t* encoder, uint8_t Ts){
+	int32_t curr_value = __HAL_TIM_GET_COUNTER(encoder->encoder_timer);
+	int32_t delta = curr_value - encoder->last_value;
+	encoder->last_value = curr_value;
+
+
+	float RPM = ((float)delta / (encoder->cpr*4)) * 60.0 / Ts;
+	return RPM;
+
+}

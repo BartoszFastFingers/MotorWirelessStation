@@ -8,13 +8,13 @@
 #ifndef CORE_INC_MOTOR_CONTROLLER_H_
 #define CORE_INC_MOTOR_CONTROLLER_H_
 
+#define CONTROLLER_MAX_ROT_VALUE 4999
+#define CONTROLLER_MIN_ROT_VALUE 2000
 
 #include "tim.h"
 #include "utils.h"
 #include "motor_encoder.h"
 
-#define CONTROLLER_MAX_ROT_VALUE 99
-#define CONTROLLER_MIN_ROT_VALUE 0
 
 typedef enum
 {
@@ -26,7 +26,7 @@ typedef enum
 typedef struct{
 	TIM_HandleTypeDef *htim;
 	uint32_t Channel;
-	int8_t current_value;
+	uint16_t current_value;
 
 	pin_t motor_direction_right;
 	pin_t motor_direction_left;
@@ -36,7 +36,8 @@ void motor_controller_init(motor_controller_t* controller, TIM_HandleTypeDef *ht
 		GPIO_TypeDef* motor_direction_right_GPIOx, uint16_t motor_direction_right_GPIO_PIN,
 		GPIO_TypeDef* motor_direction_left_GPIOx, uint16_t motor_direction_left_GPIO_PIN
 		);
-void motor_controller_set_value(motor_controller_t* controller, int8_t value);
+void motor_controller_set_value(motor_controller_t* controller, uint16_t value);
 void motor_controller_set_direction(motor_controller_t* controller, motor_direction direction);
+
 
 #endif /* CORE_INC_MOTOR_CONTROLLER_H_ */

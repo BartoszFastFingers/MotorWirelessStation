@@ -46,6 +46,7 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
     Core/Src/motor_controller.c
+    Core/Src/motor_encoder.c
 )
 
 # Add include paths
@@ -66,6 +67,8 @@ list(REMOVE_ITEM CMAKE_C_IMPLICIT_LINK_LIBRARIES ob)
 # Add linked libraries
 target_link_libraries(${CMAKE_PROJECT_NAME}
     stm32cubemx
-
     # Add user defined libraries
 )
+
+# Enable float support in printf
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -u _printf_float")
