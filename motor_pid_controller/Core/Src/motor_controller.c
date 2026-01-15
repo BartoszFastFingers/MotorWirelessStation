@@ -7,6 +7,8 @@
 
 #include "motor_controller.h"
 
+
+
 void motor_controller_init(motor_controller_t* controller, TIM_HandleTypeDef *htim, uint32_t Channel,
 		GPIO_TypeDef* motor_direction_right_GPIOx, uint16_t motor_direction_right_GPIO_PIN,
 		GPIO_TypeDef* motor_direction_left_GPIOx, uint16_t motor_direction_left_GPIO_PIN
@@ -25,7 +27,7 @@ void motor_controller_init(motor_controller_t* controller, TIM_HandleTypeDef *ht
 
 }
 
-void motor_controller_set_value(motor_controller_t* controller, int8_t value)
+void motor_controller_set_value(motor_controller_t* controller, uint16_t value)
 {
 	if(value < CONTROLLER_MIN_ROT_VALUE) {value = CONTROLLER_MIN_ROT_VALUE;}
 	else if(value > CONTROLLER_MAX_ROT_VALUE) {value = CONTROLLER_MAX_ROT_VALUE;}
@@ -55,6 +57,5 @@ void motor_controller_set_direction(motor_controller_t* controller, motor_direct
 			controller->motor_direction_right.GPIO_PIN, right);
 	HAL_GPIO_WritePin(controller->motor_direction_left.GPIOx,
 			controller->motor_direction_left.GPIO_PIN, left);
-
 }
 

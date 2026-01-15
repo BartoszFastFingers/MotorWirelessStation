@@ -8,8 +8,19 @@
 #ifndef CORE_INC_MOTOR_ENCODER_H_
 #define CORE_INC_MOTOR_ENCODER_H_
 
+#include "tim.h"
+#include "stm32f4xx_hal_tim.h"
 
+typedef struct
+{
+	TIM_HandleTypeDef* encoder_timer;
+	int32_t last_value;
+	uint8_t cpr;
+}motor_encoder_t;
 
+void motor_encoder_init(motor_encoder_t* encoder, TIM_HandleTypeDef* tim,
+		 uint8_t _cpr);
 
+float motor_encoder_rpm_callback(motor_encoder_t* encoder, uint8_t Ts);
 
 #endif /* CORE_INC_MOTOR_ENCODER_H_ */
