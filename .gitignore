@@ -1,0 +1,16 @@
+.metadata/
+*.o
+*.a
+*.elf
+*.bin
+*.hex
+*.map
+*.lst
+*.axf
+*.d
+
+
+
+
+/motor_pid_controller/config_default
+*.ioc.backup
