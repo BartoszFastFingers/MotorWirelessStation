@@ -21,6 +21,7 @@ void motor_controller_init(motor_controller_t* controller, TIM_HandleTypeDef *ht
 	controller->motor_direction_right.GPIO_PIN = motor_direction_right_GPIO_PIN;
 	controller->motor_direction_left.GPIOx = motor_direction_left_GPIOx;
 	controller->motor_direction_left.GPIO_PIN = motor_direction_left_GPIO_PIN;
+	controller->direction = NONE;
 	motor_controller_set_direction(controller, NONE);
 
 	HAL_TIM_PWM_Start(htim, Channel);
@@ -53,6 +54,7 @@ void motor_controller_set_direction(motor_controller_t* controller, motor_direct
 		break;
 	}
 
+	controller->direction = direction;
 	HAL_GPIO_WritePin(controller->motor_direction_right.GPIOx,
 			controller->motor_direction_right.GPIO_PIN, right);
 	HAL_GPIO_WritePin(controller->motor_direction_left.GPIOx,

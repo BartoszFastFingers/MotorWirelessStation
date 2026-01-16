@@ -13,7 +13,6 @@
 
 #include "tim.h"
 #include "utils.h"
-#include "motor_encoder.h"
 
 
 typedef enum
@@ -30,6 +29,7 @@ typedef struct{
 
 	pin_t motor_direction_right;
 	pin_t motor_direction_left;
+	motor_direction direction;
 }motor_controller_t;
 
 void motor_controller_init(motor_controller_t* controller, TIM_HandleTypeDef *htim, uint32_t Channel,

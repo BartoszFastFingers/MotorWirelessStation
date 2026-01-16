@@ -4,10 +4,6 @@ data = readmatrix(filename);
 CCR = data(:,1);
 RPM = data(:,2);
 
-CCR_MIN = CCR(1);
-CCR_MAX = CCR(length(PWM_VALUE));
-
-
 
 RPMf = movmean(RPM,15);
 

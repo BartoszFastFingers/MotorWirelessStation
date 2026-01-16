@@ -50,6 +50,9 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+#define STEP_VALUE 100
+#define BUF_SIZE 1000		//nedded for 1ms
+#define SAMPLE_TIME 5
 
 /* USER CODE END PV */
 
@@ -61,8 +64,29 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+char msg[64];
+
+volatile uint32_t time_ms = 0;
+volatile uint16_t rpm_index = 0;
+volatile float32_t rpm_buffer[BUF_SIZE];
+uint32_t last_step_time = 0;
 motor_encoder_t* motor_encoder;
 motor_controller_t* motor_ctrl;
+
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim)
+{
+	if(htim == &htim3)
+	{
+		float32_t rpm = motor_encoder_rpm_callback(motor_encoder, SAMPLE_TIME);
+
+		if(time_ms%1000==0) rpm_buffer[rpm_index++] = rpm;
+
+
+		if(rpm_index >= BUF_SIZE) rpm_index = 0;
+		time_ms+=SAMPLE_TIME;
+	}
+}
 
 /* USER CODE END 0 */
 
@@ -100,26 +124,22 @@ int main(void)
   MX_TIM3_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
+
+  // MEMORY ALLOC
   motor_ctrl = malloc(sizeof(motor_controller_t));
   motor_encoder = malloc(sizeof(motor_encoder_t));
+  uint16_t send_index = 0;
 
+  // INITIALIZATION FUN.
   motor_controller_init(motor_ctrl, &htim1, TIM_CHANNEL_1, motor_rot_right_GPIO_Port,
 		  motor_rot_right_Pin, motor_rot_left_GPIO_Port, motor_rot_left_Pin);
+  motor_encoder_init(motor_encoder, &htim2, 44, 45);
 
-  motor_encoder_init(motor_encoder, &htim2, 44);
+  //DIRECTION
   motor_controller_set_direction(motor_ctrl, RIGHT);
-
-  for(int i = 2000; i < CONTROLLER_MAX_ROT_VALUE + 3000; i++)
-  {
-	  uint32_t Ts = 1000;
-	  motor_controller_set_value(motor_ctrl, (uint16_t)i); HAL_Delay(Ts);
-	  float rpm = motor_encoder_rpm_callback(motor_encoder, 1);
-	  char msg[32]; snprintf(msg, sizeof(msg), "%d:%.3f\r\n", i, rpm);
-	  HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
-  }
-
-  motor_controller_set_value(motor_ctrl, CONTROLLER_MIN_ROT_VALUE + 1000);
-
+  HAL_Delay(1000);
+  uint32_t control_value = CONTROLLER_MIN_ROT_VALUE;
+  HAL_TIM_Base_Start_IT(&htim3);
 
 
   /* USER CODE END 2 */
@@ -128,10 +148,20 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-//	char msg[32];
-//	snprintf(msg, sizeof(msg), "%ld\r\n", __HAL_TIM_GET_COUNTER(&htim2));
-//	HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
-//	HAL_Delay(1000);
+
+	if(send_index != rpm_index)
+	{
+		char msg[64];
+		snprintf(msg, sizeof(msg), "%lu CCR: %.2f RPM\r\n", control_value, rpm_buffer[send_index++]);
+		HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+		if(send_index >= BUF_SIZE) send_index = 0;
+	}
+	if(time_ms - last_step_time >= 1000)
+	{
+		last_step_time = time_ms;
+		control_value += STEP_VALUE;
+		motor_controller_set_value(motor_ctrl, control_value);
+	}
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
