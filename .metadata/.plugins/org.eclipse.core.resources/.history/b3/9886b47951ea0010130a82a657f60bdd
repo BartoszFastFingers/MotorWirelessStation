@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/Bartosz/Desktop/MotorStation/EmbeddedMotorControl/Projects/Common/WPAN/Startup/stm32wbaxx_ResetHandler_GCC.s
+

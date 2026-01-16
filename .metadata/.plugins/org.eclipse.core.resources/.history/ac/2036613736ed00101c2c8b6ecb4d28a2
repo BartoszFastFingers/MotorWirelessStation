@@ -1,0 +1,23 @@
+/*
+ * motor_controller.c
+ *
+ *  Created on: Jan 9, 2026
+ *      Author: Bartosz
+ */
+
+#include "motor_controller.h"
+
+void motor_controller_init(motor_controller* controller,
+		TIM_HandleTypeDef *htim, uint32_t Channel)
+{
+	controller->htim = htim;
+	controller->Channel = Channel;
+	controller->current_value = 0;
+	HAL_TIM_PWM_Start(htim, Channel);
+}
+
+void motor_controller_set_value(motor_controller* controller, int8_t value)
+{
+	if(value < CONTROLLER_MIN_ROT_VALUE) {value = CONTROLLER_MIN_ROT_VALUE;}
+	else if(value > CONTROLLER_MAX_ROT_VALUE) {value = CONTROLLER_MAX_ROT_VALUE;}
+}

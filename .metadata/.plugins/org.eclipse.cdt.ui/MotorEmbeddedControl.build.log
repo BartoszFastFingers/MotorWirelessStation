@@ -1,0 +1,19 @@
+20:59:13 **** Incremental Build of configuration config_default for project MotorEmbeddedControl ****
+cmake --build config_default 
+[ 10%] Built target STM32_WPAN
+[ 58%] Built target STM32_Drivers
+[ 60%] Linking C executable MotorEmbeddedControl.elf
+/home/Bartosz/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/ld: /home/Bartosz/Desktop/MotorStation/MotorEmbeddedControl/cmake/stm32cubemx/../../Middlewares/ST/STM32_WPAN/ble/stack/lib/stm32wba_ble_stack_full.a(le_ctrl.o): in function `LECTRL_LL_Init':
+le_ctrl.c:(.text.LECTRL_LL_Init+0xa): undefined reference to `ll_ble_events_init'
+Memory region         Used Size  Region Size  %age Used
+             RAM:       18552 B        64 KB     28.31%
+            RAM2:           0 B        64 KB      0.00%
+           FLASH:      148824 B         1 MB     14.19%
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/MotorEmbeddedControl.dir/build.make:422: MotorEmbeddedControl.elf] Error 1
+make[1]: *** [CMakeFiles/Makefile2:103: CMakeFiles/MotorEmbeddedControl.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+"cmake --build config_default" terminated with exit code 2. Build might be incomplete.
+
+20:59:13 Build Failed. 4 errors, 0 warnings. (took 275ms)
+

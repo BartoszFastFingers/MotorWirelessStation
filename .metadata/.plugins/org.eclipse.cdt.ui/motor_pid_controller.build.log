@@ -1,0 +1,9 @@
+13:13:14 **** Incremental Build of configuration config_default for project motor_pid_controller ****
+cmake --build config_default 
+CMake Error: The source directory "/home/Bartosz/Desktop/MotorStation/motor_pid_controller" does not appear to contain CMakeLists.txt.
+Specify --help for usage, or press the help button on the CMake GUI.
+make: *** [Makefile:459: cmake_check_build_system] Error 1
+"cmake --build config_default" terminated with exit code 2. Build might be incomplete.
+
+13:13:14 Build Failed. 1 errors, 0 warnings. (took 73ms)
+
