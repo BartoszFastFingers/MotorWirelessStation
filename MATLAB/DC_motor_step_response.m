@@ -1,16 +1,9 @@
-
-clear
-clc
-
+clear;
+clc;
 s = serialport("/dev/ttyACM1",115200);
 configureTerminator(s,"LF");
 flush(s);
-header = zeros(3,1);
 
-for i = 1:3
-    parts = strsplit(readline(s));
-    header(i) = str2double(parts{3});
-end
 
 
 sample_time_ms = 5;
@@ -38,7 +31,7 @@ data = [time(:) RPM(:)];
 
 fid = fopen("step_response.csv","w");
 fprintf(fid,"time,rpm\n");
-fprintf(fid,"%f,%f\n", data');3
+fprintf(fid,"%f,%f\n", data');
 fclose(fid);
 
 figure
