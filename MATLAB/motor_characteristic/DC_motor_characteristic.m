@@ -26,7 +26,7 @@ clear s
 
 data = [CCR(:) RPM(:)];
 
-fid = fopen("characteristic.csv", "w");
+fid = fopen("data/characteristic_filtered.csv", "w");
 fprintf(fid, "ccr,rpm\n");
 fprintf(fid, "%d,%f\n",data');
 fclose(fid);

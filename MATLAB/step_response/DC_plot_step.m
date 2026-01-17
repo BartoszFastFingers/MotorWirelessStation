@@ -1,19 +1,23 @@
-filename = "characteristic.csv";
+clear;
+clc;
+filename = "data/step_response.csv";
 data = readmatrix(filename);
 
-CCR = data(:,1);
+time_ms = data(:,1);
 RPM = data(:,2);
+
+
 
 
 RPMf = movmean(RPM,15);
 
 figure
-plot(CCR,RPMf,'LineWidth',2)
+%plot(time_ms,RPMf,'LineWidth',2)
 hold on
-plot(CCR,RPM,'.','LineWidth',5)
+plot(time_ms,RPM,'LineWidth',5)
 
 grid on
-xlabel("CCR")
+xlabel("ms")
 ylabel("RPM")
 legend("raw","smoothed")
 title("DC motor characteristics")

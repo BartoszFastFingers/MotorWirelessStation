@@ -16,13 +16,12 @@
 
 
 #include "motor_controller.h"
+#include "SMA1_fir.h"
 
 typedef struct
 {
-	arm_fir_instance_f32* filter;
-	float32_t* input;
-	float32_t* output;
-	uint32_t block_size;
+    arm_fir_instance_f32 fir;
+    float32_t state[SMA1_NUM_TAPS + SMA1_BLOCK_SIZE - 1];
 }motor_encoder_filter_t;
 
 typedef struct

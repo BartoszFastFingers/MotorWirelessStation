@@ -155,6 +155,30 @@ CMSIS-DSP/fast:
 	$(MAKE) $(MAKESILENT) -f cmake/stm32cubemx/CMakeFiles/CMSIS-DSP.dir/build.make cmake/stm32cubemx/CMakeFiles/CMSIS-DSP.dir/build
 .PHONY : CMSIS-DSP/fast
 
+Components/Src/SMA1_fir.obj: Components/Src/SMA1_fir.c.obj
+.PHONY : Components/Src/SMA1_fir.obj
+
+# target to build an object file
+Components/Src/SMA1_fir.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_pid_controller.dir/build.make CMakeFiles/motor_pid_controller.dir/Components/Src/SMA1_fir.c.obj
+.PHONY : Components/Src/SMA1_fir.c.obj
+
+Components/Src/SMA1_fir.i: Components/Src/SMA1_fir.c.i
+.PHONY : Components/Src/SMA1_fir.i
+
+# target to preprocess a source file
+Components/Src/SMA1_fir.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_pid_controller.dir/build.make CMakeFiles/motor_pid_controller.dir/Components/Src/SMA1_fir.c.i
+.PHONY : Components/Src/SMA1_fir.c.i
+
+Components/Src/SMA1_fir.s: Components/Src/SMA1_fir.c.s
+.PHONY : Components/Src/SMA1_fir.s
+
+# target to generate assembly for a file
+Components/Src/SMA1_fir.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_pid_controller.dir/build.make CMakeFiles/motor_pid_controller.dir/Components/Src/SMA1_fir.c.s
+.PHONY : Components/Src/SMA1_fir.c.s
+
 Core/Src/gpio.obj: Core/Src/gpio.c.obj
 .PHONY : Core/Src/gpio.obj
 
@@ -414,6 +438,9 @@ help:
 	@echo "... CMSIS-DSP"
 	@echo "... STM32_Drivers"
 	@echo "... motor_pid_controller"
+	@echo "... Components/Src/SMA1_fir.obj"
+	@echo "... Components/Src/SMA1_fir.i"
+	@echo "... Components/Src/SMA1_fir.s"
 	@echo "... Core/Src/gpio.obj"
 	@echo "... Core/Src/gpio.i"
 	@echo "... Core/Src/gpio.s"
