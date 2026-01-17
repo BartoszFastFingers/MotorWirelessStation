@@ -29,7 +29,7 @@ clear s
 
 data = [time(:) RPM(:)];
 
-fid = fopen("step_response.csv","w");
+fid = fopen("data/step_response_filtered.csv","w");
 fprintf(fid,"time,rpm\n");
 fprintf(fid,"%f,%f\n", data');
 fclose(fid);

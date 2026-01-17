@@ -93,4 +93,5 @@ CMakeFiles/motor_pid_controller.dir/Core/Src/motor_encoder.c.obj: \
  /home/Bartosz/Desktop/MotorStation/motor_pid_controller/cmake/stm32cubemx/../../Middlewares/Third_Party/ARM_CMSIS/Include/dsp/window_functions.h \
  /home/Bartosz/Desktop/MotorStation/motor_pid_controller/cmake/stm32cubemx/../../Core/Inc/motor_controller.h \
  /home/Bartosz/Desktop/MotorStation/motor_pid_controller/cmake/stm32cubemx/../../Core/Inc/utils.h \
- /home/Bartosz/Desktop/MotorStation/motor_pid_controller/cmake/stm32cubemx/../../Core/Inc/gpio.h
+ /home/Bartosz/Desktop/MotorStation/motor_pid_controller/cmake/stm32cubemx/../../Core/Inc/gpio.h \
+ /home/Bartosz/Desktop/MotorStation/motor_pid_controller/Components/Inc/SMA1_fir.h

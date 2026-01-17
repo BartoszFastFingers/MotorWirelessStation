@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "motor_pid_controller.map"
+  "CMakeFiles/motor_pid_controller.dir/Components/Src/SMA1_fir.c.obj"
+  "CMakeFiles/motor_pid_controller.dir/Components/Src/SMA1_fir.c.obj.d"
   "CMakeFiles/motor_pid_controller.dir/Core/Src/gpio.c.obj"
   "CMakeFiles/motor_pid_controller.dir/Core/Src/gpio.c.obj.d"
   "CMakeFiles/motor_pid_controller.dir/Core/Src/main.c.obj"

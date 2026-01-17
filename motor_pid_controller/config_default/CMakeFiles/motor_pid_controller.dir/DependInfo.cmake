@@ -22,6 +22,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/Bartosz/Desktop/MotorStation/motor_pid_controller/CMAKE_PROJECT_NAME"
+  "/home/Bartosz/Desktop/MotorStation/motor_pid_controller/Components/Inc"
   "/home/Bartosz/Desktop/MotorStation/motor_pid_controller/cmake/stm32cubemx/../../Core/Inc"
   "/home/Bartosz/Desktop/MotorStation/motor_pid_controller/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc"
   "/home/Bartosz/Desktop/MotorStation/motor_pid_controller/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"
@@ -33,6 +34,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/Bartosz/Desktop/MotorStation/motor_pid_controller/Components/Src/SMA1_fir.c" "CMakeFiles/motor_pid_controller.dir/Components/Src/SMA1_fir.c.obj" "gcc" "CMakeFiles/motor_pid_controller.dir/Components/Src/SMA1_fir.c.obj.d"
   "/home/Bartosz/Desktop/MotorStation/motor_pid_controller/Core/Src/gpio.c" "CMakeFiles/motor_pid_controller.dir/Core/Src/gpio.c.obj" "gcc" "CMakeFiles/motor_pid_controller.dir/Core/Src/gpio.c.obj.d"
   "/home/Bartosz/Desktop/MotorStation/motor_pid_controller/Core/Src/main.c" "CMakeFiles/motor_pid_controller.dir/Core/Src/main.c.obj" "gcc" "CMakeFiles/motor_pid_controller.dir/Core/Src/main.c.obj.d"
   "/home/Bartosz/Desktop/MotorStation/motor_pid_controller/Core/Src/motor_controller.c" "CMakeFiles/motor_pid_controller.dir/Core/Src/motor_controller.c.obj" "gcc" "CMakeFiles/motor_pid_controller.dir/Core/Src/motor_controller.c.obj.d"

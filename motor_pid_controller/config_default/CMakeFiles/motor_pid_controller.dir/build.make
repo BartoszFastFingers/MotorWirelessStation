@@ -194,10 +194,24 @@ CMakeFiles/motor_pid_controller.dir/startup_stm32f411xe.s.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/motor_pid_controller.dir/startup_stm32f411xe.s.s"
 	/home/Bartosz/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/Bartosz/Desktop/MotorStation/motor_pid_controller/startup_stm32f411xe.s -o CMakeFiles/motor_pid_controller.dir/startup_stm32f411xe.s.s
 
+CMakeFiles/motor_pid_controller.dir/Components/Src/SMA1_fir.c.obj: CMakeFiles/motor_pid_controller.dir/flags.make
+CMakeFiles/motor_pid_controller.dir/Components/Src/SMA1_fir.c.obj: /home/Bartosz/Desktop/MotorStation/motor_pid_controller/Components/Src/SMA1_fir.c
+CMakeFiles/motor_pid_controller.dir/Components/Src/SMA1_fir.c.obj: CMakeFiles/motor_pid_controller.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Bartosz/Desktop/MotorStation/motor_pid_controller/config_default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/motor_pid_controller.dir/Components/Src/SMA1_fir.c.obj"
+	/home/Bartosz/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/motor_pid_controller.dir/Components/Src/SMA1_fir.c.obj -MF CMakeFiles/motor_pid_controller.dir/Components/Src/SMA1_fir.c.obj.d -o CMakeFiles/motor_pid_controller.dir/Components/Src/SMA1_fir.c.obj -c /home/Bartosz/Desktop/MotorStation/motor_pid_controller/Components/Src/SMA1_fir.c
+
+CMakeFiles/motor_pid_controller.dir/Components/Src/SMA1_fir.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/motor_pid_controller.dir/Components/Src/SMA1_fir.c.i"
+	/home/Bartosz/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/Bartosz/Desktop/MotorStation/motor_pid_controller/Components/Src/SMA1_fir.c > CMakeFiles/motor_pid_controller.dir/Components/Src/SMA1_fir.c.i
+
+CMakeFiles/motor_pid_controller.dir/Components/Src/SMA1_fir.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/motor_pid_controller.dir/Components/Src/SMA1_fir.c.s"
+	/home/Bartosz/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/Bartosz/Desktop/MotorStation/motor_pid_controller/Components/Src/SMA1_fir.c -o CMakeFiles/motor_pid_controller.dir/Components/Src/SMA1_fir.c.s
+
 CMakeFiles/motor_pid_controller.dir/Core/Src/motor_controller.c.obj: CMakeFiles/motor_pid_controller.dir/flags.make
 CMakeFiles/motor_pid_controller.dir/Core/Src/motor_controller.c.obj: /home/Bartosz/Desktop/MotorStation/motor_pid_controller/Core/Src/motor_controller.c
 CMakeFiles/motor_pid_controller.dir/Core/Src/motor_controller.c.obj: CMakeFiles/motor_pid_controller.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Bartosz/Desktop/MotorStation/motor_pid_controller/config_default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/motor_pid_controller.dir/Core/Src/motor_controller.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Bartosz/Desktop/MotorStation/motor_pid_controller/config_default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/motor_pid_controller.dir/Core/Src/motor_controller.c.obj"
 	/home/Bartosz/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/motor_pid_controller.dir/Core/Src/motor_controller.c.obj -MF CMakeFiles/motor_pid_controller.dir/Core/Src/motor_controller.c.obj.d -o CMakeFiles/motor_pid_controller.dir/Core/Src/motor_controller.c.obj -c /home/Bartosz/Desktop/MotorStation/motor_pid_controller/Core/Src/motor_controller.c
 
 CMakeFiles/motor_pid_controller.dir/Core/Src/motor_controller.c.i: cmake_force
@@ -211,7 +225,7 @@ CMakeFiles/motor_pid_controller.dir/Core/Src/motor_controller.c.s: cmake_force
 CMakeFiles/motor_pid_controller.dir/Core/Src/motor_encoder.c.obj: CMakeFiles/motor_pid_controller.dir/flags.make
 CMakeFiles/motor_pid_controller.dir/Core/Src/motor_encoder.c.obj: /home/Bartosz/Desktop/MotorStation/motor_pid_controller/Core/Src/motor_encoder.c
 CMakeFiles/motor_pid_controller.dir/Core/Src/motor_encoder.c.obj: CMakeFiles/motor_pid_controller.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Bartosz/Desktop/MotorStation/motor_pid_controller/config_default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/motor_pid_controller.dir/Core/Src/motor_encoder.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Bartosz/Desktop/MotorStation/motor_pid_controller/config_default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/motor_pid_controller.dir/Core/Src/motor_encoder.c.obj"
 	/home/Bartosz/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/motor_pid_controller.dir/Core/Src/motor_encoder.c.obj -MF CMakeFiles/motor_pid_controller.dir/Core/Src/motor_encoder.c.obj.d -o CMakeFiles/motor_pid_controller.dir/Core/Src/motor_encoder.c.obj -c /home/Bartosz/Desktop/MotorStation/motor_pid_controller/Core/Src/motor_encoder.c
 
 CMakeFiles/motor_pid_controller.dir/Core/Src/motor_encoder.c.i: cmake_force
@@ -233,6 +247,7 @@ motor_pid_controller_OBJECTS = \
 "CMakeFiles/motor_pid_controller.dir/Core/Src/sysmem.c.obj" \
 "CMakeFiles/motor_pid_controller.dir/Core/Src/syscalls.c.obj" \
 "CMakeFiles/motor_pid_controller.dir/startup_stm32f411xe.s.obj" \
+"CMakeFiles/motor_pid_controller.dir/Components/Src/SMA1_fir.c.obj" \
 "CMakeFiles/motor_pid_controller.dir/Core/Src/motor_controller.c.obj" \
 "CMakeFiles/motor_pid_controller.dir/Core/Src/motor_encoder.c.obj"
 
@@ -294,6 +309,7 @@ motor_pid_controller.elf: CMakeFiles/motor_pid_controller.dir/Core/Src/stm32f4xx
 motor_pid_controller.elf: CMakeFiles/motor_pid_controller.dir/Core/Src/sysmem.c.obj
 motor_pid_controller.elf: CMakeFiles/motor_pid_controller.dir/Core/Src/syscalls.c.obj
 motor_pid_controller.elf: CMakeFiles/motor_pid_controller.dir/startup_stm32f411xe.s.obj
+motor_pid_controller.elf: CMakeFiles/motor_pid_controller.dir/Components/Src/SMA1_fir.c.obj
 motor_pid_controller.elf: CMakeFiles/motor_pid_controller.dir/Core/Src/motor_controller.c.obj
 motor_pid_controller.elf: CMakeFiles/motor_pid_controller.dir/Core/Src/motor_encoder.c.obj
 motor_pid_controller.elf: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
@@ -344,7 +360,7 @@ motor_pid_controller.elf: cmake/stm32cubemx/CMakeFiles/CMSIS-DSP.dir/__/__/Middl
 motor_pid_controller.elf: cmake/stm32cubemx/CMakeFiles/CMSIS-DSP.dir/__/__/Middlewares/Third_Party/ARM_CMSIS/Source/SVMFunctions/SVMFunctionsF16.c.obj
 motor_pid_controller.elf: CMakeFiles/motor_pid_controller.dir/build.make
 motor_pid_controller.elf: CMakeFiles/motor_pid_controller.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/Bartosz/Desktop/MotorStation/motor_pid_controller/config_default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable motor_pid_controller.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/Bartosz/Desktop/MotorStation/motor_pid_controller/config_default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C executable motor_pid_controller.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/motor_pid_controller.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
