@@ -40,20 +40,25 @@ add_subdirectory(cmake/stm32cubemx)
 # Link directories setup
 target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined library search paths
+    
 )
 
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
+    Components/Src/SMA1_fir.c
+    Components/Src/PID_pid.c
     Core/Src/motor_controller.c
     Core/Src/motor_encoder.c
+    Core/Src/motor_system.c
+    
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
     CMAKE_PROJECT_NAME
-
+	Components/Inc
 )
 
 # Add project symbols (macros)

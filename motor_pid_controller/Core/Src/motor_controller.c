@@ -59,3 +59,4 @@ void motor_controller_set_direction(motor_controller_t* controller, motor_direct
 			controller->motor_direction_left.GPIO_PIN, left);
 }
 
+
